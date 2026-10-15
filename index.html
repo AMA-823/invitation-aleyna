@@ -4,8 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f3ed">
-  <meta name="description" content="Une petite invitation en quatre pages pour Aleyna.">
-  <title>Pour Aleyna — un date ?</title>
+  <meta name="description" content="J’ai quelque chose à te montrer.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Une petite invitation">
+  <meta property="og:description" content="J’ai quelque chose à te montrer.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Une petite invitation">
+  <meta name="twitter:description" content="J’ai quelque chose à te montrer.">
+  <title>Une petite invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -214,7 +220,7 @@
         note.hidden = current === 4;
         if (current === 4) no.style.transform = 'translate(0, 0)';
         if (addHistory) history.pushState({page: current}, '', `#page-${current}`);
-        document.title = current === 4 ? 'La question — Pour Aleyna' : `Page ${current} sur 4 — Pour Aleyna`;
+        document.title = `Une petite invitation — ${current}/4`;
       }
       next.addEventListener('click', () => showPage(current + 1));
       back.addEventListener('click', () => showPage(current - 1));
