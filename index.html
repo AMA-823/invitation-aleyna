@@ -6,12 +6,12 @@
   <meta name="theme-color" content="#f8f3ed">
   <meta name="description" content="J’ai quelque chose à te montrer.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Une petite invitation">
+  <meta property="og:title" content="Projet A">
   <meta property="og:description" content="J’ai quelque chose à te montrer.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Une petite invitation">
+  <meta name="twitter:title" content="Projet A">
   <meta name="twitter:description" content="J’ai quelque chose à te montrer.">
-  <title>Une petite invitation</title>
+  <title>Projet A</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -128,7 +128,7 @@
 <body>
   <main class="shell">
     <header class="topline">
-      <div class="brand"><span class="seal" aria-hidden="true">A</span><span>Une petite invitation</span></div>
+      <div class="brand"><span class="seal" aria-hidden="true">A</span><span>Projet A</span></div>
       <span class="counter" id="counter">01 <span aria-hidden="true">/</span> 04</span>
     </header>
     <div class="progress" aria-label="Progression"><span class="active"></span><span></span><span></span><span></span></div>
@@ -220,7 +220,7 @@
         note.hidden = current === 4;
         if (current === 4) no.style.transform = 'translate(0, 0)';
         if (addHistory) history.pushState({page: current}, '', `#page-${current}`);
-        document.title = `Une petite invitation — ${current}/4`;
+        document.title = `Projet A — ${current}/4`;
       }
       next.addEventListener('click', () => showPage(current + 1));
       back.addEventListener('click', () => showPage(current - 1));
